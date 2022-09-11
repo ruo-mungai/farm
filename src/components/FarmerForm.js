@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState, useEffect} from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
@@ -7,6 +7,7 @@ function FarmerForm({ textStyle, button, newFarmer }) {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [location, setLocation] = useState("");
+  
 
   // function to handle new data from input
   function handleSubmit(event) {
