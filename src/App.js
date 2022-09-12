@@ -83,13 +83,9 @@ function App() {
     //Route all the component
     <div className="App">
       <SearchAppBar images={images} />
-      <Routes>
-        <Route
-          path="/"
-          element={<Login loggedin={loggedin} logSet={setLoggedin} />}
-        />
-        <Route element={<ProtectedRoutes loggedin={loggedin} />} />
-        <Route path="/home" element={<Home farmer={farmer} total={total} handleDelete={handleDelete} setTotal={setTotal}/>} />
+    
+        <Routes>
+        <Route path="/" element={<Home farmer={farmer} total={total} handleDelete={handleDelete} setTotal={setTotal}/>} />
         <Route
           path="/views"
           element={
